@@ -1,5 +1,5 @@
 # The point of this program is to open a new browser window every hour to notify the user that is time to take a break.
-# time.sleep takes a argument of seconds.
+# time.sleep takes an argument of seconds.
 
 import time
 import webbrowser
