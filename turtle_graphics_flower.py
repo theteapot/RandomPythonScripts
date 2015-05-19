@@ -22,7 +22,7 @@ def draw_art():
     turt.speed(0)
     turt.color("blue")
     turt.shape("turtle")
-    # Call draw diamond 90 times, and have turt start with a difference of 4 degrees
+    # Call draw_diamond() 90 times, and have turt start with a difference of 4 degrees on each iteration.
     # NB: the range and difference in degrees must be multiples of 360, eg. 90 * 40 = 360 degrees.
     for num in range(0, 90):
         draw_diamond(turt)
@@ -32,7 +32,7 @@ def draw_art():
     turt.right(90)
     turt.forward(250)
 
-    # will close the window when user clicks on it (provided the drawing has finished).
+    # Closes window when user clicks on said window (provided the drawing has finished).
     window.exitonclick()
 
 draw_art()
