@@ -55,3 +55,17 @@ class MenuItem(Base):
     restaurant_id = Column(Integer, ForeignKey('restaurant.id'))
 	
     restaurant = relationship(Restaurant)
+
+
+
+
+
+
+
+####### Insert at End of File #######
+
+# Create instance of create_engine class and point to the database to be used
+engine = create_engine('sqlite:///restaurantmenu.db')
+# Goes into database and adds the classes we will soon create as new tables in our database.
+Base.metadata.create_all(engine)
+
